@@ -1,4 +1,4 @@
-# Contributing to the Android TV AirPlay receiver
+# Contributing to Vela
 
 Bug reports, device compatibility results, documentation improvements and focused code changes are welcome. The UI, documentation, issues and pull requests use English.
 
@@ -7,8 +7,8 @@ Bug reports, device compatibility results, documentation improvements and focuse
 Clone the repository normally; native dependency sources are materialized, so `git submodule update` is unnecessary. Follow [BUILD.md](BUILD.md) for the pinned JDK 17, Android SDK 36, NDK 27.0.12077973, CMake 3.22.1 and Gradle 8.11.1 toolchain.
 
 ```sh
-git clone https://github.com/egemenmermer/salon-tv.git
-cd salon-tv
+git clone https://github.com/egemenmermer/vela.git
+cd vela
 ./gradlew :app:testDebugUnitTest --no-daemon --max-workers=1
 ./gradlew :app:assembleRelease --no-daemon --max-workers=1
 ```
@@ -27,10 +27,10 @@ JNI classes intentionally keep the upstream Kotlin package names. Update scripts
 
 ## Bug reports and device results
 
-Use [GitHub Issues](https://github.com/egemenmermer/salon-tv/issues) for reproducible bugs and compatibility reports. Include TV model, Android version, application version, sender model/OS, selected quality, whether PIN is enabled, Wi-Fi/Ethernet setup, reproduction steps, expected behavior and observed behavior. For a successful device test, describe which checks passed and how long the session lasted; do not infer frame rate from the selected quality setting.
+Use [GitHub Issues](https://github.com/egemenmermer/vela/issues) for reproducible bugs and compatibility reports. Include TV model, Android version, application version, sender model/OS, selected quality, whether PIN is enabled, Wi-Fi/Ethernet setup, reproduction steps, expected behavior and observed behavior. For a successful device test, describe which checks passed and how long the session lasted; do not infer frame rate from the selected quality setting.
 
 Do not include actual PINs, passwords, pairing keys, signing credentials, private media or sensitive URLs. If reporting an exploitable security issue, avoid posting credentials or exploitation details publicly; use an available private reporting channel first. This project currently does not advertise a dedicated private vulnerability reporting channel.
 
 ## Licensing
 
-This application uses [GPL-3.0](LICENSE), with separate third-party licenses retained in their source trees and [notices](THIRD_PARTY_NOTICES.txt). Submit material you have permission to contribute under the applicable project license. Corresponding release sources are available from [Releases](https://github.com/egemenmermer/salon-tv/releases).
+This application uses [GPL-3.0](LICENSE), with separate third-party licenses retained in their source trees and [notices](THIRD_PARTY_NOTICES.txt). Submit material you have permission to contribute under the applicable project license. Corresponding release sources are available from [Releases](https://github.com/egemenmermer/vela/releases).

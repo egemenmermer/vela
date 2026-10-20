@@ -1,18 +1,20 @@
-# AirPlay Screen Mirroring Receiver for Android TV
+# Vela
 
-An open-source receiver that displays an iPhone, iPad or Mac screen on Android TV and Google TV over the local network. The TV interface is in English and works with a remote. **Connection PIN authentication is enabled by default.**
+**AirPlay screen mirroring receiver for Android TV and Google TV.**
 
-[Download APK and installation guide](https://github.com/egemenmermer/salon-tv/releases/latest) · [How it works](docs/ARCHITECTURE.md) · [Build from source](BUILD.md) · [Contribute](CONTRIBUTING.md)
+Vela is an open-source receiver that displays an iPhone, iPad or Mac screen on Android TV and Google TV over the local network. The TV interface is in English and works with a remote. **Connection PIN authentication is enabled by default.**
+
+[Download APK and installation guide](https://github.com/egemenmermer/vela/releases/latest) · [How it works](docs/ARCHITECTURE.md) · [Build from source](BUILD.md) · [Contribute](CONTRIBUTING.md)
 
 > **Verification:** builds, automated tests and APK checks are recorded in [TEST_REPORT.md](TEST_REPORT.md). Physical TV–Apple connectivity, remote navigation and long sessions have not been tested. 1080p/60 and 4K/30 are requested targets, not guaranteed output. The 4K mode is experimental.
 
 ## Install and connect
 
-1. Download and extract [AirPlay Receiver 1.0.2.zip](https://github.com/egemenmermer/salon-tv/releases/download/v1.0.2/AirPlay.Receiver.1.0.2.zip). It contains the APK and an English installation and usage guide.
+1. Download and extract [AirPlay Receiver 1.0.2.zip](https://github.com/egemenmermer/vela/releases/download/v1.0.2/AirPlay.Receiver.1.0.2.zip). It contains the APK and an English installation and usage guide.
 2. Transfer the APK to your TV by USB or file transfer and install it with a file manager. If prompted, allow that file manager to install unknown apps.
 3. Open **AirPlay Receiver** on your TV. On your iPhone/iPad or Mac, open Control Center → **Screen Mirroring**, select the name displayed on the TV and enter the TV’s PIN when prompted.
 
-[APK only](https://github.com/egemenmermer/salon-tv/releases/download/v1.0.2/AirPlay.Receiver.1.0.2.apk) · [Full installation guide](INSTALL.md) · [Troubleshooting](docs/FAQ.md)
+[APK only](https://github.com/egemenmermer/vela/releases/download/v1.0.2/AirPlay.Receiver.1.0.2.apk) · [Full installation guide](INSTALL.md) · [Troubleshooting](docs/FAQ.md)
 
 Requires **Android 7.0 / API 24 or newer**, with ARM64 or ARMv7. This Android APK does not run on Samsung Tizen or LG webOS. Sender and TV must share a local network; Ethernet on the TV and Wi-Fi on the sender can be used together. The default receiver name is **Android TV**. If discovery renames it after a name collision, use the actual name displayed on the TV.
 
@@ -44,7 +46,7 @@ Screen mirroring, direct video/HLS and audio-only playback are separate paths. T
 
 ## Development and documentation
 
-Current version: **1.0.2**, versionCode **3**. Application ID: `app.salon.receiver`. compileSdk / targetSdk: **36**. Internal identifiers and JNI packages are retained for upgrade and native compatibility; the visible application name is **AirPlay Receiver**. Existing saved TV names are preserved on update.
+Vela was previously called Salon. Current version: **1.0.2**, versionCode **3**. Application ID: `app.salon.receiver`. compileSdk / targetSdk: **36**. Internal identifiers and JNI packages are retained for upgrade and native compatibility; in 1.0.2 the visible application name is still **AirPlay Receiver**. Existing saved TV names are preserved on update.
 
 | Document | Contents |
 | --- | --- |
@@ -59,6 +61,6 @@ Native sources are materialized in the repository; no submodule initialization i
 
 ## License and corresponding source
 
-The app and its upstream application use [GPL-3.0](LICENSE); other components retain their licenses. Each [release](https://github.com/egemenmermer/salon-tv/releases) provides its corresponding full source archive, notices, manifest and SHA-256 checksums separately. Keep corresponding sources and licenses accessible when redistributing an APK.
+The app and its upstream application use [GPL-3.0](LICENSE); other components retain their licenses. Each [release](https://github.com/egemenmermer/vela/releases) provides its corresponding full source archive, notices, manifest and SHA-256 checksums separately. Keep corresponding sources and licenses accessible when redistributing an APK.
 
 This project is not affiliated with Apple Inc. Use of the AirPlay name does not imply Apple certification.

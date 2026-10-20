@@ -1,4 +1,4 @@
-# Install and use the Android TV AirPlay receiver
+# Install and use Vela
 
 ## Requirements
 
